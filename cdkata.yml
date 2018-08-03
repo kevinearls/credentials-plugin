@@ -6,10 +6,10 @@ packaging:
   config:
     bundle:
       groupId: "io.jenkins.tools.war-packager.demo"
-      artifactId: "pom-input-demo"his
+      artifactId: "pom-input-demo"
       vendor: "Jenkins project"
     buildSettings:
-      pom: pom.xml
+      pom: effective-pom.xml
       version: 2.121.2-cb-1
     war:
       groupId: "org.jenkins-ci.main"
