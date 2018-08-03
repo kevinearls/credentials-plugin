@@ -20,10 +20,10 @@ ath:
   useLocalSnapshots: false
   tests:
     - "plugins.WorkflowPluginTest"
-pct:
-  useLocalSnapshots: true
-  plugins:
-    - "credentials"
+#pct:
+#  useLocalSnapshots: true
+#  plugins:
+#    - "credentials"
 urr:
   disabled: false
   publishPOMs: true
