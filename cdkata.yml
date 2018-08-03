@@ -1,0 +1,42 @@
+---
+github:
+  credentialsId: github-scan
+packaging:
+  cwpVersion: 1.0
+  config:
+    bundle:
+      groupId: "io.jenkins.tools.war-packager.demo"
+      artifactId: "pom-input-demo"his
+      vendor: "Jenkins project"
+    buildSettings:
+      pom: pom.xml
+      version: 2.121.2-cb-1
+    war:
+      groupId: "org.jenkins-ci.main"
+      artifactId: "jenkins-war"
+      source:
+        version: 2.121.2-cb-1
+ath:
+  useLocalSnapshots: false
+  tests:
+    - "plugins.WorkflowPluginTest"
+pct:
+  useLocalSnapshots: true
+  plugins:
+    - "credentials"
+urr:
+  disabled: false
+  publishPOMs: true
+cjocATH:
+  rerunFailingTestsCount: 1
+  tests:
+    - "SSHTest"
+jeATH:
+  rerunFailingTestsCount: 1
+  tests:
+    - "BackupPluginTest"
+verifiedATH:
+  rerunFailingTestsCount: 1
+  tests:
+    - "AntPluginTest"
+
